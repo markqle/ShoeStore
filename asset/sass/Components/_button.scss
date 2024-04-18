@@ -1,0 +1,8 @@
+.sneakerbtn-yellow{
+    @include styleButton($linear, none, $pd-3+2.5, $pd-4+2, $bd-2, $ls-2, .5s);
+    @include styleText(white, $fs-1, $fw-2);
+    &:hover{
+        opacity: 0.75;
+    }
+    
+}
