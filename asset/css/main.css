@@ -26,6 +26,18 @@ html, body {
   opacity: 0.75;
 }
 
+.price-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
 header {
   background: #f5f9fe;
   box-shadow: 0 2px 4px #e2ebfc;
@@ -75,4 +87,15 @@ header .nav-item:hover::after {
   background-color: #ccc;
   padding: 20px;
   text-align: center;
+}
+
+.product h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.product .dropdown {
+  padding-bottom: 20px;
+  right: 0;
 }
