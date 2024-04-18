@@ -1,0 +1,44 @@
+@mixin styleText($color, $fs, $fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+
+//mixin style chung cho button ( thuoc tinh chung)
+@mixin styleButton($bg, $bd, $pd-y, $pd-x, $radius, $spacing, $transition){
+    background: $bg;
+    border: $bd;
+    padding: $pd-y $pd-x;
+    border-radius: $radius;
+    letter-spacing: $spacing;
+    transition: $transition;
+
+    //style text
+}
+
+@mixin styleButtonHover($bg-hover, $bd-hover, $color-hover){
+    background: $bg-hover;
+    border-color: $bd-hover;
+    color: $color-hover;
+}
+
+
+//inputs: key("large")
+//output: 
+// @media screen and (max-width: 992px){
+// dien dong noi dung css can responsive}
+//
+@mixin responsive($screen){
+    @if(map-has-key($map: $breakpoints, $key: $screen)){
+        // co ton tai ten key trong $breakpoints
+        // lay gia tri => $value chua gia tri lay duoc
+        $value: map-get($map: $breakpoints, $key: $screen);
+
+        //media query
+        @media screen and (max-width: $value){
+            @content; // nhan vao noi dung responsive rieng
+        }
+    }
+    // @else{}
+}

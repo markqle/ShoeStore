@@ -1,2 +1,13 @@
 //Các code reset chung cho cả web
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Asap", sans-serif;
+    // kiểu chữ chung
+    @include styleText($color-dark-1, $fs-1, $fw-1)
+}
