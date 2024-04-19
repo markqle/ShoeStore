@@ -38,6 +38,21 @@ html, body {
   font-weight: bold;
 }
 
+/* Style the buttons */
+.page-btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.page-btn.active, .page-btn:hover {
+  background-color: #666;
+  color: white;
+}
+
 header {
   background: #f5f9fe;
   box-shadow: 0 2px 4px #e2ebfc;
@@ -85,8 +100,9 @@ header .nav-item:hover::after {
 }
 .product .sneaker-grid .grid-item {
   background-color: #ccc;
-  padding: 20px;
+  padding: 20px 30px;
   text-align: center;
+  margin: auto;
 }
 
 .product h2 {
@@ -98,4 +114,10 @@ header .nav-item:hover::after {
 .product .dropdown {
   padding-bottom: 20px;
   right: 0;
+}
+
+.product #pagination {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
 }
