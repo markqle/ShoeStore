@@ -13,9 +13,9 @@ class Validation {
         return false;
     }
 
-    kiemTraEmail(value, idSpan, message) {
-        const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (value.match(pattern)) {
+    kiemTraEmail = function(value, idSpan, message) {
+        let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(value.match(pattern)) {
             // Valid: clear error message and hide span
             document.querySelector(idSpan).innerHTML = "";
             document.querySelector(idSpan).style.display = "none";
