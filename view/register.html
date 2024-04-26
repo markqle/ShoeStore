@@ -71,8 +71,7 @@
                 <div class="row">
                     <div class="col-12 form-group">
                         <label for="">Username/Email : </label>
-                        <input type="text" class="form-control" id="txtEmail"
-                            placeholder="Enter your email">
+                        <input type="text" class="form-control" id="txtEmail" placeholder="Enter your email">
                         <span id="spanEmailCus" class="text-danger"></span>
                     </div>
                     <div class="col-12 form-group">
@@ -82,6 +81,10 @@
                     </div>
 
                     <button type="button" class="btn btn-primary me-2" onclick="logIn()">Log In</button>
+
+                    <button type="button" id="logoutButton" class="btn btn-danger me-2" onclick="logOut()"
+                        style="display: none;">Log Out</button>
+
 
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal"
@@ -177,8 +180,9 @@
 
 
 
-    <script src="../model/User.js"></script>
+
     <script src="../model/Validation.js"></script>
+    <script src="../model/User.js"></script>
     <script src="../controller/mainRegister.js"></script>
 
 

@@ -1,9 +1,9 @@
-class User {
-    constructor(InputEmail,InputPassword,InputName,InputGender,InputPhone){
-        this.InputPhone = InputPhone
-        this.InputName = InputName
-        this.gender = InputGender
-        this.InputEmail = InputEmail
-        this.InputPassword = InputPassword
+class User{
+    constructor(email,password,name,gender,phone){
+        this.email = email
+        this.password = password
+        this.name = name
+        this.gender = gender
+        this.phone = phone
     }
 }
