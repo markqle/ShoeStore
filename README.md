@@ -9,8 +9,6 @@
 | Bảo           | Chi tiết sản phẩm | Pending |
 | Minh          | Đăng ký & Đăng nhập & Đăng xuất | Deployed |
 | Bảo           | Giỏ hàng (add item vô giỏ) | Pending |
-| Minh          | Filtering (lọc sản phẩm) | Current |
-| Bảo           | Tìm kiếm sản phẩm      |  Pending |
 
 2. Requirement:
 - SASS responsive
